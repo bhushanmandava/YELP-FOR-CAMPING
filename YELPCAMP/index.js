@@ -29,7 +29,7 @@ const dbUrl=process.env.DB_URL
 //local link='mongodb://127.0.0.1:27017/YELP-CAMP'
 main().catch(err => console.log(err));
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/YELP-CAMP');
+    await mongoose.connect(dbUrl);
     console.log('Connection established');
 }
 
@@ -41,7 +41,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
 
 const store =new MongoStore({
-    url:'mongodb://127.0.0.1:27017/YELP-CAMP',
+    url:dbUrl,
     secret:'secret',
     touchAfter: 24*60*60
 

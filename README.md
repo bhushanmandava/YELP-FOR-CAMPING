@@ -1,12 +1,11 @@
-Here is a draft README file for your repository:
 
----
 
 # YELP-FOR-CAMPING
 
 ## Table of Contents
 - Introduction
 - Features
+- Technical Stack
 - Installation
 - Usage
 - Contributing
@@ -22,6 +21,15 @@ YELP-FOR-CAMPING is a web application that allows users to find, rate, and revie
 - Rate and review campgrounds
 - Upload and display images of campgrounds
 - Search and filter campgrounds
+
+## Technical Stack
+- **Frontend:** HTML, CSS, JavaScript, EJS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** Passport.js
+- **Maps:** MapTiler
+- **Image Storage:** Cloudinary
+- **Version Control:** Git, GitHub
 
 ## Installation
 To install and set up the project locally, follow these steps:
@@ -54,9 +62,9 @@ Contributions are welcome! Please follow these steps to contribute:
 4. Push to the branch
 5. Create a pull request
 
+## License
+This project is licensed under the MIT License.
 
 ## Contact
-For questions or feedback, please contact the repository owner at bhushanmandava.
-bhushanmandava16@gmail.com
-
+For questions or feedback, please contact the repository owner at [bhushanmandava16@gmail.com](mailto:bhushanmandava16@gmail.com).
 

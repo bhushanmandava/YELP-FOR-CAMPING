@@ -1,14 +1,18 @@
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
 
 const { forEach } = require('./cities');
 const Campground = require('../models/campground')
 const cities = require('./cities')
 const { places, descriptors } = require('./seedHelper');
+const dbUrl=process.env.DB_URL
 //const descriptors = require('./seedHelper')
 //const mongoose = require('mongoose')
 const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/YELP-CAMP');
+    await mongoose.connect(dbUrl);
     console.log('conection established');
 
     // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
